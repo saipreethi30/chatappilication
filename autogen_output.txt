@@ -1,0 +1,30 @@
+AutoGen RAG Group Chat - Sample Output
+
+Boss_Assistant:
+Loaded documentation and retrieved relevant chunks.
+
+Product_Manager:
+Analyzing requirements... TERMINATE
+
+Senior_Python_Engineer:
+Here is the sample Spark parallel training code in FLAML:
+--------------------------------------------------------
+import flaml
+
+automl = flaml.AutoML()
+settings = {
+    "time_budget": 30,
+    "metric": "r2",
+    "task": "regression",
+    "n_concurrent_trials": 2,
+    "use_spark": True,
+}
+automl.fit(dataframe=dataframe, label=label, **settings)
+--------------------------------------------------------
+TERMINATE
+
+Code_Reviewer:
+The code looks correct. TERMINATE
+
+Boss_Assistant:
+TERMINATE
